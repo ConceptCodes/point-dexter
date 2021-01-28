@@ -1,14 +1,19 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "3.2.1",
-  "description": "A chrome extension boilerplate built with React 17 and Webpack 5",
+  "name": "point-dexter",
+  "version": "0.0.1",
+  "description": "A chrome extension that believes it knows everything",
   "license": "MIT",
+  "author": {
+    "email": "conceptcodes@gmail.com",
+    "name": "Concept"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": "https://github.com/conceptcodes/point-dexter"
   },
   "scripts": {
     "build": "node utils/build.js",
+    "prod-build": "NODE_ENV=production yarn build",
     "start": "node utils/webserver.js",
     "prettier": "prettier --write '**/*.{js,jsx,css,html}'"
   },
@@ -17,7 +22,9 @@
     "@types/chrome": "0.0.126",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "bootstrap": "^4.6.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
     "react-hot-loader": "^4.13.0"
   },
